@@ -1,0 +1,352 @@
+/*ensures that all elements are sized in this more intuitive way*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Georgia", Arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/*body */
+
+body {
+    background-color: rgb(5, 5, 31);
+}
+
+
+/* style of wrapper  */
+
+.wrapper {
+    background-color: rgb(238, 238, 247);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper h1 {
+    font-size: 20px;
+}
+
+
+/* Style of the top navigation bar */
+
+.navigation-bar {
+    overflow: hidden;
+    background: linear-gradient(315deg, rgba(31, 46, 68, 0.9945728291316527) 0%, rgba(56, 55, 60, 0.9945728291316527) 96%);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+
+/* navbar links */
+
+.navigation-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* This style will make a vertical navigation bar with the links in list all float to the right */
+
+.navigation-bar li a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+
+/* Change color on hover for navigation bar */
+
+.navigation-bar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.front-view {
+    text-align: center;
+}
+
+.front-view ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.front-image {
+    width: 100%;
+    padding: 5%;
+    position: relative;
+    background-image: url(images/bg.jpg);
+    margin-bottom: 26px;
+}
+
+.profile {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 2px solid #2c3e50;
+    border-radius: 50%;
+    padding: 8px;
+    position: relative;
+}
+
+.profile:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #c9cfd4;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    animation: wave 1.5s infinite linear;
+}
+
+@keyframes wave {
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.name {
+    color: #e6ebe7;
+    font-size: 16px;
+    margin: 12px;
+}
+
+.title {
+    color: #e8e6eb;
+    font-size: 16px;
+    margin: 14px;
+    padding: 4px;
+}
+
+.social-media {
+    position: absolute;
+    width: 100%;
+    top: 86.7%;
+    left: 0;
+    z-index: 1;
+}
+
+.social-media i {
+    width: 60px;
+    height: 60px;
+    background: #2c3e50;
+    border-radius: 50%;
+    color: #f1f1f1;
+    font-size: 20px;
+    line-height: 60px !important;
+    margin: 0 10px;
+    position: relative;
+}
+
+.social-media i:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #2c3e50;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.4s linear;
+}
+
+.social-media i:hover:after {
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+.resume {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.info,
+.about-me {
+    width: 50%;
+    padding: 12px;
+}
+
+.container {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.container p {
+    color: #FFF;
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.container p:nth-child(2) {
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.level {
+    background: #262626;
+    border: 1px solid #0fffb7;
+    border-radius: 2px;
+}
+
+.html {
+    width: 70%;
+    background-color: #4CAF50;
+}
+
+.css {
+    width: 60%;
+    background-color: #2196F3;
+}
+
+.c-shop {
+    width: 80%;
+    background-color: #f44336;
+}
+
+.python {
+    width: 50%;
+    background-color: #808080;
+}
+
+section {
+    color: rgb(232, 235, 238);
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 0 auto;
+    font-family: "Arial", sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(315deg, rgba(31, 46, 68, 0.9945728291316527) 0%, rgba(56, 55, 60, 0.9945728291316527) 96%);
+}
+
+section h2 {
+    text-align: left;
+    padding-bottom: 40px;
+    font-size: 25px;
+    color: rgb(185, 237, 241);
+}
+
+.education,
+.experience {
+    margin: 12px;
+}
+
+.education strong,
+h4 {
+    color: rgb(185, 237, 241);
+}
+
+.experience strong,
+h4 {
+    color: rgb(185, 237, 241);
+}
+
+.task {
+    margin-left: 45px;
+}
+
+footer {
+    clear: both;
+    padding: 10px;
+    color: rgb(245, 245, 252);
+    text-align: center;
+    background: radial-gradient(circle, rgba(31, 85, 97, 0.9984944661458334) 0%, rgba(1, 1, 23, 1) 100%);
+    height: 90px;
+    line-height: 2.5;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide */
+
+@media screen and (max-width: 700px) {
+    .wrapper,
+    body,
+    .front-view {
+        width: 100%;
+    }
+    .navigation-bar a {
+        float: none;
+        width: 100%;
+        background: radial-gradient(circle, rgba(31, 85, 97, 0.9984944661458334) 0%, rgba(1, 1, 23, 1) 100%);
+    }
+    section {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .resume {
+        flex-direction: column;
+    }
+    .about-me,
+    .info {
+        width: 100%;
+    }
+    .title,
+    .name {
+        font-size: 15px;
+    }
+}
+
+
+/* Responsive layout - when the screen is less than 467px wide */
+
+@media screen and (max-width: 467px) {
+    .wrapper,
+    body,
+    .front-view {
+        width: 100%;
+    }
+    .navigation-bar a {
+        float: none;
+        width: 100%;
+        background: radial-gradient(circle, rgba(31, 85, 97, 0.9984944661458334) 0%, rgba(1, 1, 23, 1) 100%);
+    }
+    section {
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .resume {
+        flex-direction: column;
+    }
+    .about-me,
+    .info {
+        width: 100%;
+    }
+    .title,
+    .name {
+        font-size: 13px;
+        padding-bottom: 22px;
+    }
+}
