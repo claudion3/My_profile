@@ -83,7 +83,7 @@ body {
     width: 100%;
     padding: 5%;
     position: relative;
-    background-image: url(images/bg.jpg);
+    background-image: url(../../images/bg.jpg);
     margin-bottom: 26px;
 }
 
@@ -211,6 +211,12 @@ body {
     background: #262626;
     border: 1px solid #0fffb7;
     border-radius: 2px;
+    transition: width 2s;
+    transition: width 2s;
+}
+
+.container:hover {
+    width: 450px;
 }
 
 .html {
@@ -228,8 +234,18 @@ body {
     background-color: #f44336;
 }
 
+.git {
+    width: 85%;
+    background-color: #f44336;
+}
+
 .python {
     width: 50%;
+    background-color: #808080;
+}
+
+.javascript {
+    width: 10%;
     background-color: #808080;
 }
 
